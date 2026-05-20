@@ -1,0 +1,548 @@
+[20/5/2026 9:28 PM] Shikin UMK: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFP: Agro Product Technology - Derivative Applications in MD2 Pineapple Growth</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- KaTeX for beautiful math equations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .custom-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #10b981;
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            transition: transform 0.1s ease-in-out;
+        }
+        .custom-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Header / Navbar -->
+    <header class="bg-emerald-800 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-5 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="p-2.5 bg-emerald-700 rounded-lg shadow-inner">
+                    <i data-lucide="sprout" class="w-8 h-8 text-emerald-300"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold tracking-tight">Agro-Product Calculus Portal</h1>
+                    <p class="text-xs text-emerald-200 uppercase font-semibold tracking-wider">SFP: Agro Product Technology &bull; Bioscience Analytics</p>
+                </div>
+            </div>
+            <div class="text-center md:text-right">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-950 text-emerald-300 border border-emerald-700">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Interactive Study Module
+                </span>
+            </div>
+        </div>
+    </header>
+[20/5/2026 9:28 PM] Shikin UMK: <!-- Main Content Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        
+        <!-- Scenario Introduction -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8 mb-8">
+            <div class="flex flex-col lg:flex-row gap-8 items-center">
+                <div class="lg:w-2/3">
+                    <div class="flex items-center gap-2 text-emerald-600 font-semibold mb-2">
+                        <i data-lucide="info" class="w-5 h-5"></i>
+                        <span>The Bioscience Scenario</span>
+                    </div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">MD2 Pineapple Fruit Development Kinetics</h2>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        In Malaysia's high-value agriculture sector, the <strong>MD2 Pineapple</strong> (<em>Ananas comosus</em>) is a key export crop. For an Agro-Product Technologist, predicting the transition from raw vegetative growth to post-harvest ripening is vital. Understanding the <strong>Instantaneous Growth Rate (IGR)</strong> &mdash; calculated using the mathematical derivative \(f'(x)\) &mdash; allows us to optimize critical operations like targeted potassium fertilizing, hormone application, and precise harvest scheduling.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <div class="p-4 bg-emerald-50 rounded-xl border border-emerald-100 flex items-start gap-3">
+                            <i data-lucide="trending-up" class="w-5 h-5 text-emerald-600 mt-0.5"></i>
+                            <div>
+                                <h4 class="font-semibold text-emerald-900 text-sm">Peak Resource Uptake</h4>
+                                <p class="text-xs text-emerald-700 mt-1">Maximum slope (\(f'(x)\)) shows when the fruit is growing fastest, demanding high water and nutrients.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-amber-50 rounded-xl border border-amber-100 flex items-start gap-3">
+                            <i data-lucide="calendar" class="w-5 h-5 text-amber-600 mt-0.5"></i>
+                            <div>
+                                <h4 class="font-semibold text-amber-900 text-sm">Maturity Benchmarking</h4>
+                                <p class="text-xs text-amber-700 mt-1">As growth tapers off (\(f'(x) \to 0\)), starch-to-sugar conversion spikes, signaling the optimal harvest window.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 w-full bg-slate-50 rounded-2xl p-6 border border-slate-200">
+                    <h3 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i data-lucide="file-text" class="w-4 h-4 text-emerald-600"></i> Data Reference & Origin
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                        The mathematical model implemented here is calibrated against physiological growth datasets provided by official Malaysian agriculture advisories:
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-700 font-medium">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="link" class="w-3.5 h-3.5 text-slate-400"></i>
+                            <a href="https://www.mpib.gov.my" target="_blank" class="text-emerald-600 hover:underline">Malaysian Pineapple Industry Board (LPNM)</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="book-open" class="w-3.5 h-3.5 text-slate-400"></i>
+                            <span>MARDI Crop Management Manual (MD2 Agronomy)</span>
+                        </li>
+                    </ul>
+[20/5/2026 9:28 PM] Shikin UMK: <div class="mt-4 pt-4 border-t border-slate-200 flex items-center gap-3">
+                        <div class="bg-emerald-100 p-2 rounded text-emerald-800 font-bold text-xs">
+                            16 Wks
+                        </div>
+                        <span class="text-xs text-slate-500">Standard monitoring window post-forcing (anthesis to harvest).</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mathematical Formulations -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <!-- Growth Curve Equation -->
+            <div class="bg-gradient-to-br from-emerald-900 to-teal-950 rounded-2xl shadow-md p-6 text-white relative overflow-hidden">
+                <div class="absolute right-0 bottom-0 opacity-10 translate-x-4 translate-y-4">
+                    <i data-lucide="calculator" class="w-48 h-48"></i>
+                </div>
+                <span class="px-2 py-1 text-xs uppercase font-bold tracking-wider bg-emerald-800 text-emerald-300 rounded mb-4 inline-block">
+                    Cumulative Growth Model
+                </span>
+                <h3 class="text-xl font-bold mb-3">Pineapple Weight Function: \(f(x)\)</h3>
+                <p class="text-sm text-emerald-100/80 mb-6 leading-relaxed">
+                    Determines cumulative wet weight of the MD2 fruit (in grams) as a function of time \(x\) (in weeks post-flowering).
+                </p>
+                <div class="bg-emerald-950/60 backdrop-blur-sm rounded-xl p-4 mb-4 border border-emerald-800/50">
+                    <div class="text-center text-lg md:text-xl font-mono text-emerald-300 py-2">
+                        \[f(x) = -0.5x^3 + 12x^2 + 10x + 50\]
+                    </div>
+                </div>
+                <div class="text-xs text-emerald-200/70 space-y-1">
+                    <p>• \(x\): Weeks since flower induction (\(0 \le x \le 16\))</p>
+                    <p>• \(50\text{g}\): Base weight of immature fruitlet at Week 0.</p>
+                </div>
+            </div>
+
+            <!-- Derivative Equation -->
+            <div class="bg-gradient-to-br from-slate-900 to-slate-950 rounded-2xl shadow-md p-6 text-white relative overflow-hidden">
+                <div class="absolute right-0 bottom-0 opacity-10 translate-x-4 translate-y-4">
+                    <i data-lucide="activity" class="w-48 h-48"></i>
+                </div>
+                <span class="px-2 py-1 text-xs uppercase font-bold tracking-wider bg-slate-800 text-slate-300 rounded mb-4 inline-block">
+                    Rate of Change (Derivative)
+                </span>
+                <h3 class="text-xl font-bold mb-3">Instantaneous Growth Rate: \(f'(x)\)</h3>
+                <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+                    Uses the Power Rule to compute the exact velocity of crop growth (in grams per week) at any precise moment in time.
+                </p>
+                <div class="bg-slate-950/60 backdrop-blur-sm rounded-xl p-4 mb-4 border border-slate-800/50">
+                    <div class="text-center text-lg md:text-xl font-mono text-cyan-300 py-2">
+                        \[f'(x) = \frac{d}{dx}[f(x)] = -1.5x^2 + 24x + 10\]
+                    </div>
+                </div>
+                <div class="text-xs text-slate-400 space-y-1">
+                    <p>• Power Rule Rule applied: \(\frac{d}{dx}[x^n] = n \cdot x^{n-1}\)</p>
+                    <p>• Units are given in <strong>grams per week (g/wk)</strong>.</p>
+                </div>
+            </div>
+        </section>
+[20/5/2026 9:28 PM] Shikin UMK: <!-- Interactive Simulator Core -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Interactive Graph Side -->
+            <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Interactive Growth Dynamics</h3>
+                            <p class="text-xs text-slate-500 mt-1">
+                                Click directly on the curve or drag the precision slider below to see the instantaneous rate of change.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 text-xs font-semibold">
+                            <span class="flex items-center gap-1.5 text-emerald-600">
+                                <span class="w-3 h-1.5 bg-emerald-500 rounded-sm inline-block"></span>
+                                Weight (g)
+                            </span>
+                            <span class="flex items-center gap-1.5 text-blue-500">
+                                <span class="w-3 h-0.5 border-t-2 border-dashed border-blue-500 inline-block"></span>
+                                Tangent (Slope = \(f'(x)\))
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Canvas -->
+                    <div class="relative w-full h-80 sm:h-96 md:h-[400px]">
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Precision Controls -->
+                <div class="mt-6 pt-6 border-t border-slate-100">
+                    <label for="timeSlider" class="flex justify-between text-sm font-semibold text-slate-700 mb-2">
+                        <span>Adjust Timeframe (Weeks Post-Flowering):</span>
+                        <span class="text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md font-mono text-xs">
+                            Week <span id="sliderVal">8.0</span>
+                        </span>
+                    </label>
+                    <div class="flex items-center gap-4">
+                        <span class="text-xs font-bold text-slate-400">Week 0</span>
+                        <input 
+                            type="range" 
+                            id="timeSlider" 
+                            min="0" 
+                            max="16" 
+                            step="0.1" 
+                            value="8" 
+                            class="custom-slider w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                        >
+                        <span class="text-xs font-bold text-slate-400">Week 16</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mathematical Results & Layman Explanations -->
+            <div class="bg-slate-900 text-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-lg font-bold pb-4 border-b border-slate-800 flex items-center gap-2">
+                        <i data-lucide="flask-conical" class="text-emerald-400"></i>
+                        <span>Live Bioscience Telemetry</span>
+                    </h3>
+[20/5/2026 9:28 PM] Shikin UMK: <!-- Display Selected Parameters -->
+                    <div class="grid grid-cols-2 gap-4 my-6">
+                        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                            <span class="text-xs text-slate-400 block mb-1">Crop Age</span>
+                            <span class="text-2xl font-bold text-emerald-400 font-mono" id="dispWeek">8.0</span>
+                            <span class="text-xs text-slate-400 block">weeks</span>
+                        </div>
+                        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                            <span class="text-xs text-slate-400 block mb-1">Fruit Weight \(f(x)\)</span>
+                            <span class="text-2xl font-bold text-white font-mono" id="dispWeight">642.0</span>
+                            <span class="text-xs text-slate-400 block">grams</span>
+                        </div>
+                    </div>
+
+                    <!-- Derivative Calculus Value -->
+                    <div class="bg-emerald-950/40 border border-emerald-800/40 rounded-xl p-4 mb-6">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs text-emerald-300 font-bold uppercase tracking-wider">Instantaneous Growth Rate \(f'(x)\)</span>
+                            <i data-lucide="gauge" class="w-4 h-4 text-emerald-400"></i>
+                        </div>
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-3xl font-extrabold text-white font-mono" id="dispDerivative">106.00</span>
+                            <span class="text-sm font-semibold text-emerald-300">g/week</span>
+                        </div>
+                        <p class="text-[11px] text-emerald-400/80 mt-1" id="dispMathStatement">
+                            Calculated as: -1.5(8.0)² + 24(8.0) + 10 = 106.00
+                        </p>
+                    </div>
+
+                    <!-- Layman Insights Card -->
+                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                        <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block mb-2 flex items-center gap-1">
+                            <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                            <span>Technologist Agro-Insight</span>
+                        </span>
+                        <p class="text-xs text-slate-300 leading-relaxed" id="laymanExplanation">
+                            Loading explanation based on selected week...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Interactive Tutorial / Footer Box -->
+                <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] text-slate-400 flex items-center justify-between">
+                    <span>Double-click or drag to reset baseline view.</span>
+                    <button id="resetBtn" class="px-2 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded transition font-medium">Reset</button>
+                </div>
+            </div>
+        </section>
+[20/5/2026 9:28 PM] Shikin UMK: <!-- SFP Application Guide -->
+        <section class="mt-8 bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8">
+            <h3 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                <i data-lucide="graduation-cap" class="text-emerald-700"></i>
+                <span>Agro Product Technology Core Competencies</span>
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="space-y-2">
+                    <span class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">1</span>
+                    <h4 class="font-bold text-slate-900 text-sm">Formulation of Derivative Values</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        In food processing and crop science, we rarely look only at raw quantity. The derivative represents the <em>rate</em> of chemical or biological transformations (e.g., Brix accumulation velocity, enzymatic hydrolysis rate, or microbial yield over time).
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <span class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">2</span>
+                    <h4 class="font-bold text-slate-900 text-sm">Decisions Based on Slope Inflections</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Solving for the maximum growth velocity is simple: take the second derivative, set \(f''(x) = 0\), and solve for \(x\). For our MD2 model, \(f''(x) = -3x + 24 = 0 \implies x = 8\). At exactly 8 weeks, resource consumption is mathematically maximized.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <span class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">3</span>
+                    <h4 class="font-bold text-slate-900 text-sm">Predicting Shelf-Life & Ripening</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        When the derivative \(f'(x)\) drops close to zero, physical expansion yields to biochemical ripening. Starch reserves in the fruit rapidly convert to sucrose and fructose, signaling the point of high sweetening where the harvest crew must be deployed.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-6 border-t border-slate-800 mt-12 text-xs">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Faculty of Agro-Based Industry, Universiti Malaysia Kelantan. All rights reserved.</p>
+            <p class="mt-1 text-slate-500">Agro-Product Technology (SFP) Applied Calculus Coursework &bull; Designed by Bioscience Experts</p>
+        </div>
+    </footer>
+
+    <!-- Interactive script to handle calculus and Chart.js -->
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+
+        // Mathematical functions
+        // f(x) = -0.5x^3 + 12x^2 + 10x + 50
+        function getWeight(x) {
+            return -0.5 * Math.pow(x, 3) + 12 * Math.pow(x, 2) + 10 * x + 50;
+        }
+
+        // f'(x) = -1.5x^2 + 24x + 10
+        function getDerivative(x) {
+            return -1.5 * Math.pow(x, 2) + 24 * x + 10;
+        }
+
+        // Function to compute points for the main growth curve
+        const dataPoints = [];
+        for (let x = 0; x <= 16; x += 0.2) {
+            dataPoints.push({ x: Number(x.toFixed(1)), y: Number(getWeight(x).toFixed(2)) });
+        }
+[20/5/2026 9:28 PM] Shikin UMK: // Generate data for tangent line
+        function getTangentData(selectedX) {
+            const slope = getDerivative(selectedX);
+            const y0 = getWeight(selectedX);
+            const tangentPoints = [];
+            // Draw tangent spanning 2.5 weeks on either side for localized visual slope representation
+            const startX = Math.max(0, selectedX - 2.5);
+            const endX = Math.min(16, selectedX + 2.5);
+            
+            for (let x = startX; x <= endX; x += 0.5) {
+                // Point-slope form: y - y0 = m(x - x0) => y = m(x - x0) + y0
+                const yVal = slope * (x - selectedX) + y0;
+                if (yVal >= 0) { // Keep the line above the graph baseline
+                    tangentPoints.push({ x: Number(x.toFixed(1)), y: Number(yVal.toFixed(2)) });
+                }
+            }
+            return tangentPoints;
+        }
+
+        // Layman insights mapper based on developmental phase of the crop
+        function getLaymanExplanation(week) {
+            if (week >= 0 && week < 4) {
+                return **Phase: Post-Anthesis/Early Fruitlet Division.** The growth rate is relatively low (about ${getDerivative(week).toFixed(1)} g/week). This is the cellular division stage where cell numbers multiply. Avoid physical trauma to the plants and maintain baseline micro-irrigation. High nitrogen isn't crucial yet.;
+            } else if (week >= 4 && week < 7.5) {
+                return **Phase: Exponential Cell Expansion.** The growth velocity is accelerating rapidly to over ${getDerivative(week).toFixed(1)} g/week! The fruit is scaling up in structural size. Highly recommended to apply potassium-rich fertilizers now to assist water retention and carbohydrate translocation to the sink tissue.;
+            } else if (week >= 7.5 && week <= 9.0) {
+                return **Phase: Peak Physiological Growth Velocity (Inflection Point).** Week 8 represents the mathematical maximum growth speed (approx. 106 g/week). This is the crop's absolute peak resource demand. Any water stress or nutrient shortage right now will dramatically stunt ultimate fruit sizing and yield.;
+            } else if (week > 9.0 && week < 13.0) {
+                return **Phase: Structural Maturation.** Growth is still occurring, but the velocity is decelerating (${getDerivative(week).toFixed(1)} g/week). The plant has finished establishing structural size. Carbohydrates are accumulating as starch in the tissue. Keep irrigation moderate and steady.;
+            } else {
+                return **Phase: Ripening & Starch-Sugar Hydrolysis.** Growth velocity has dropped to near-zero (only ${getDerivative(week).toFixed(1)} g/week). Expansion has ceased. The pineapple is now converting stored starch into glucose and fructose. Stop synthetic watering to concentrate sugars. Ready for sweet harvesting!;
+            }
+        }
+
+        // Setup Chart
+        const ctx = document.getElementById('growthChart').getContext('2d');
+        let currentSelectedX = 8.0;
+
+        // Custom vertical line plugin to mark current point
+        const cursorLinePlugin = {
+            id: 'cursorLine',
+            afterDraw: (chart) => {
+                if (currentSelectedX !== null) {
+                    const ctx = chart.ctx;
+                    const xAxis = chart.scales.x;
+                    const yAxis = chart.scales.y;
+                    const xCoord = xAxis.getPixelForValue(currentSelectedX);
+                    
+                    ctx.save();
+                    ctx.beginPath();
+                    ctx.strokeStyle = '#e2e8f0';
+                    ctx.lineWidth = 1.5;
+                    ctx.setLineDash([5, 5]);
+                    ctx.moveTo(xCoord, yAxis.top);
+                    ctx.lineTo(xCoord, yAxis.bottom);
+                    ctx.stroke();
+                    ctx.restore();
+                }
+            }
+        };
+[20/5/2026 9:28 PM] Shikin UMK: const chart = new Chart(ctx, {
+            type: 'scatter',
+            data: {
+                datasets: [
+                    {
+                        label: 'MD2 Growth Curve f(x)',
+                        data: dataPoints,
+                        showLine: true,
+                        borderColor: '#10b981',
+                        borderWidth: 3.5,
+                        backgroundColor: 'rgba(16, 185, 129, 0.05)',
+                        fill: false,
+                        tension: 0.1,
+                        pointRadius: 0,
+                        pointHoverRadius: 6,
+                        order: 2
+                    },
+                    {
+                        label: 'Tangent at Selected Time f\'(x)',
+                        data: getTangentData(currentSelectedX),
+                        showLine: true,
+                        borderColor: '#3b82f6',
+                        borderWidth: 2,
+                        borderDash: [6, 4],
+                        pointRadius: 0,
+                        fill: false,
+                        order: 1
+                    },
+                    {
+                        label: 'Selected Coordinate',
+                        data: [{ x: currentSelectedX, y: getWeight(currentSelectedX) }],
+                        pointRadius: 8,
+                        pointBackgroundColor: '#ef4444',
+                        pointBorderColor: '#ffffff',
+                        pointBorderWidth: 2.5,
+                        order: 0
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false // Using custom legend
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return Week ${context.raw.x.toFixed(1)}: ${context.raw.y.toFixed(1)} g;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        type: 'linear',
+                        title: {
+                            display: true,
+                            text: 'Time (Weeks Post-Flowering)',
+                            color: '#475569',
+                            font: { size: 12, weight: 'bold' }
+                        },
+                        min: 0,
+                        max: 16,
+                        grid: { color: '#f1f5f9' },
+                        ticks: { color: '#64748b' }
+                    },
+                    y: {
+                        type: 'linear',
+                        title: {
+                            display: true,
+                            text: 'Pineapple Fruit Weight (Grams)',
+                            color: '#475569',
+                            font: { size: 12, weight: 'bold' }
+                        },
+                        min: 0,
+                        max: 1400,
+                        grid: { color: '#f1f5f9' },
+                        ticks: { color: '#64748b' }
+                    }
+                },
+                onClick: (e, activeEls) => {
+                    const points = chart.getElementsAtEventForMode(e, 'nearest', { intersect: false }, true);
+                    if (points.length > 0) {
+                        const index = points[0].index;
+                        const clickedDatasetIndex = points[0].datasetIndex;
+                        // Determine coordinate from chart coordinates
+                        const canvasPosition = Chart.helpers.getRelativePosition(e, chart);
+                        const dataX = chart.scales.x.getValueForPixel(canvasPosition.x);
+                        
+                        if (dataX >= 0 && dataX <= 16) {
+                            updateTelemetry(Number(dataX.toFixed(1)));
+                        }
+                    }
+                }
+            },
+            plugins: [cursorLinePlugin]
+[20/5/2026 9:28 PM] Shikin UMK: });
+
+        // DOM Elements
+        const slider = document.getElementById('timeSlider');
+        const sliderVal = document.getElementById('sliderVal');
+        const dispWeek = document.getElementById('dispWeek');
+        const dispWeight = document.getElementById('dispWeight');
+        const dispDerivative = document.getElementById('dispDerivative');
+        const dispMathStatement = document.getElementById('dispMathStatement');
+        const laymanExplanation = document.getElementById('laymanExplanation');
+        const resetBtn = document.getElementById('resetBtn');
+
+        // Telemetry updater function
+        function updateTelemetry(val) {
+            currentSelectedX = val;
+            
+            // Sync slider and labels
+            slider.value = val;
+            sliderVal.innerText = val.toFixed(1);
+            dispWeek.innerText = val.toFixed(1);
+
+            // Compute math
+            const weight = getWeight(val);
+            const derivative = getDerivative(val);
+
+            // Sync math labels
+            dispWeight.innerText = weight.toFixed(1);
+            dispDerivative.innerText = derivative.toFixed(2);
+            dispMathStatement.innerText = Calculated as: -1.5(${val.toFixed(1)})² + 24(${val.toFixed(1)}) + 10 = ${derivative.toFixed(2)};
+
+            // Sync layout description
+            laymanExplanation.innerText = getLaymanExplanation(val);
+
+            // Redraw Chart lines
+            chart.data.datasets[1].data = getTangentData(val);
+            chart.data.datasets[2].data = [{ x: val, y: weight }];
+            chart.update('none'); // Update smoothly without full animation reset
+        }
+
+        // Add event listener to input slider
+        slider.addEventListener('input', (e) => {
+            updateTelemetry(parseFloat(e.target.value));
+        });
+
+        // Reset to initial telemetry state (Week 8)
+        resetBtn.addEventListener('click', () => {
+            updateTelemetry(8.0);
+        });
+
+        // Run primary trigger to set initial Week 8 data correctly
+        window.addEventListener('load', () => {
+            updateTelemetry(8.0);
+        });
+    </script>
+</body>
+</html>
